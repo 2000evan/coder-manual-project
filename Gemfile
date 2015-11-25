@@ -3,16 +3,10 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: [:development, :test]
-<<<<<<< HEAD
-
-gem 'bootstrap-sass', '3.3.1'
-# Use Bootstrap Library for styling
-=======
 gem 'bootstrap-sass', '3.3.1'
 gem 'devise', '3.4.1'
 
 gem 'font-awesome-sass', '4.4.0'
->>>>>>> user_authentication
 # Use postgresql as the database for production
 group :production do
   gem 'pg'
