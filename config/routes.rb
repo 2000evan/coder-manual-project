@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
+  devise_for :users
+  resources :contacts
   get '/about' => 'pages#about'
+  get '/secret' => 'pages#secret'
+  get '/new' => 'pages#new'
+  get '/muchwow' => 'pages#muchwow'
+  
   root 'pages#home'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

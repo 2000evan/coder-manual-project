@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workspace</title>
+  <title>No Error Here!!!</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+ <link rel="stylesheet" href="font-awesome-animation.min.css">
 <body>
-
-<%= yield %>
-
-<nav class="navbar navbar-default navbar-static-top" role="navigation">
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
   <div class='container'>
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
@@ -19,14 +17,36 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <%= link_to 'SaaS', root_path, class: 'navbar-brand' %>
+      <%= link_to root_path, class: 'navbar-brand' do %>
+        <i class="fa fa-cog fa-spin", "hackgreeng"></i>
+        Ev Match
+      <% end %>
     </div>
     <div class="collapse navbar-collapse" id="main-nav-collapse">
+      <div class="collapse navbar-collapse" id="main-nav-collapse">
+      <div class="nav navbar-nav navbar-right">
+        <% if current_user %>
+          <%= button_to "SIGN OUT", destroy_user_session_path, method: :delete, class: 'btn btn-danger navbar-btn' %>
+        <% else %>
+          <%= link_to "SIGN UP", new_user_registration_path, class: 'btn btn-success navbar-btn', method: :get %>
+          <%= link_to "LOG IN", new_user_session_path, class: 'btn btn-primary navbar-btn', method: :get %>
+        <% end %>
+      </div>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "About", "#" %></li>
+        <li class= "secret" title= "Something is here..."><%= link_to "#", secret_path %></li>
+        <li title= "Click here for updates about Ev Match!"><%= link_to "WHAT'S NEW?", new_path %></li>
+        <li title= "Learn about how we started Ev Match!"><%= link_to "ABOUT", about_path %></li>
+        <li title= "Have a question? Click here to email us!"><%= link_to "CONTACT US", new_contact_path %></li>
+    </div>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
 </nav>
+<div class="container">  
+  <% flash.each do |key, value| %>
+    <%= content_tag :div, value, class: "alert alert-#{key}" %>
+  <% end %>
+  <%= yield %>
+</div>
 </body>
 </html>
