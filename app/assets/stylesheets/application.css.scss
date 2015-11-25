@@ -50,3 +50,27 @@ a.srkt:hover {
   transition: 4s;
 }
 
+.row {
+  font-family: Arial;
+  color: white;
+}
+
+.well {
+    
+
+background: #232526; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #232526 , #414345); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #232526 , #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border: none;
+}
+
+.btn-default {
+    background: -webkit-linear-gradient(90deg, #000000 10%, #53346D 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #000000 10%, #53346D 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #000000 10%, #53346D 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #000000 10%, #53346D 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #000000 10%, #53346D 90%); /* W3C */
+  border: none;
+  font-family: Arial;
+  color: green;
+}
