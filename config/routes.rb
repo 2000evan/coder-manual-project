@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users, controllers: { "users/registrations" }
+  devise_for :users
   resources :contacts
   get '/about' => 'pages#about'
   get '/secret' => 'pages#secret'
