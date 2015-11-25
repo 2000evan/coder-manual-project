@@ -37,7 +37,7 @@ h1 {
 i {
   color: #1ec606;
 }
-// HI
+
 
 a {
   color: black;
@@ -64,3 +64,11 @@ background: linear-gradient(to left, #232526 , #414345); /* W3C, IE 10+/ Edge, F
 border: none;
 }
 
+.secret {
+  color: transparent;
+  font-size: 0px;
+}
+
+.btn-success {
+  width: 150px;
+}

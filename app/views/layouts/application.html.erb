@@ -6,6 +6,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+ <link rel="stylesheet" href="font-awesome-animation.min.css">
 <body>
 <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
   <div class='container'>
@@ -23,10 +24,10 @@
     </div>
     <div class="collapse navbar-collapse" id="main-nav-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "WHAT'S NEW?", new_path %></li>
-        <li><%= link_to "ABOUT", about_path %></li>
-        <li><%= link_to "CONTACT US", new_contact_path %></li>
-        <!--<li><%= link_to "Secret", secret_path %></li>-->
+        <li class= "secret" title= "Something is here..."><%= link_to "#", secret_path %></li>
+        <li title= "Click here for updates about Ev Match!"><%= link_to "WHAT'S NEW?", new_path %></li>
+        <li title= "Learn about how we started Ev Match!"><%= link_to "ABOUT", about_path %></li>
+        <li title= "Have a question? Click here to email us!"><%= link_to "CONTACT US", new_contact_path %></li>
     </div>
       </ul>
     </div><!-- /.navbar-collapse -->
