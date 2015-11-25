@@ -25,5 +25,28 @@ body {
   background:     -ms-linear-gradient(90deg, #000000 10%, #53346D 90%); /* IE10 */
   background:      -o-linear-gradient(90deg, #000000 10%, #53346D 90%); /* Opera 11.10+ */
   background:         linear-gradient(90deg, #000000 10%, #53346D 90%); /* W3C */
-        
+  font-family: "Elite Hacker (Corroded)";
+  color: black;
 }
+
+h1 {
+  text-shadow: 3px 3px 1px rgba(150, 150, 150, 1);
+}
+
+
+i {
+  color: #1ec606;
+}
+// HI
+
+a {
+  color: black;
+}
+
+a.srkt:hover {
+  color: #1ec606;
+  text-decoration: none;
+  font-size: 100px;
+  transition: 4s;
+}
+

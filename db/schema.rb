@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20151112152925) do
+=======
+ActiveRecord::Schema.define(version: 20151120202445) do
+>>>>>>> master
 
   create_table "contacts", force: true do |t|
     t.string   "name"
