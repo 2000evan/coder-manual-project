@@ -5,7 +5,6 @@ Rails.application.routes.draw do
   end
   resources :contacts
   get '/about' => 'pages#about'
-  root 'pages#home'
   get '/secret' => 'pages#secret'
   get '/new' => 'pages#new'
   get '/muchwow' => 'pages#muchwow'
