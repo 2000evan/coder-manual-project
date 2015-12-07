@@ -34,6 +34,7 @@
         <% end %>
       </div>
       <ul class="nav navbar-nav navbar-right">
+        <%= link_to "Create your profile!", new_user_profile_path(current_user) if current_user %>
         <li class= "secret" title= "Something is here..."><%= link_to "#", secret_path %></li>
         <li title= "Click here for updates about Ev Match!"><%= link_to "WHAT'S NEW?", new_path %></li>
         <li title= "Learn about how we started Ev Match!"><%= link_to "ABOUT", about_path %></li>
